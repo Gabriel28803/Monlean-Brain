@@ -24,6 +24,41 @@
 	position: absolute;
 	top: 3px;
 }
+.abrir__menu {
+	height: 5%;
+	width: 10%;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+.cerrar__menu{
+	height: 10%;
+	width: 10%;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.menu{
+	background: transparent;
+	backdrop-filter: blur(20px);
+	position: fixed;
+	top: 0;
+	transform: translateY(-500px);
+	transition: transform .5s;
+	width: 100%;
+}
+.titulo__menu{
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	margin: 10px;
+}
+.opcion__menu{
+	color: #fff;
+	margin-left: 15px;
+	font-size: 20px;
+
+}
 .pagina1__container--encabezado {
 	width: 100%;
 	align-self: center;
@@ -225,14 +260,6 @@
 	width: 100%;
 	height: 100vh;
 	background-image: url(imagenes/pagina1.png);
-	background-image: no-repeat;
-	background-image: fixed;
-	background-image: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
 	}
 
 	.pagina2 {
@@ -242,14 +269,6 @@
 	width: 100%;
 	height: 100%;
 	background-image: url(imagenes/pagina2.png);
-	background-image: no-repeat;
-	background-image: fixed;
-	background-image: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
 	}
 
 	.pagina3 {
@@ -259,14 +278,6 @@
 	width: 100%;
 	height: 100%;
 	background-image: url(imagenes/pagina3.png);
-	background-image: no-repeat;
-	background-image: fixed;
-	background-image: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
 	}
 
 	.pagina4 {
@@ -276,14 +287,6 @@
 	width: 100%;
 	height: 100%;
 	background-image: url(imagenes/pagina4.png);
-	background-image: no-repeat;
-	background-image: fixed;
-	background-image: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
 	}
 	.pagina5 {
 	display: flex;
@@ -292,6 +295,9 @@
 	width: 100%;
 	height: 100%;
 	background-image: url(imagenes/pagina5.png);
+	}
+
+	.pagina1, .pagina2, .pagina3, .pagina4, .pagina5{
 	background-image: no-repeat;
 	background-image: fixed;
 	background-image: center;
@@ -306,4 +312,36 @@
 		padding: 10px;
 	}
 
+	.abrir__menu {
+	height: 50px;
+	width: 80px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	}
+	.cerrar__menu{
+		height: 50px;
+		width: 80px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	.menu{
+		position: fixed;
+		top: 0;
+		transform: translateY(-500px);
+		transition: transform .5s;
+		width: 100%;
+	}
+	.titulo__menu{
+		text-align: center;
+		font-size: 30px;
+		color: #fff;
+		margin: 10px;
+	}
+	.opcion__menu{
+		color: #fff;
+		margin-left: 15px;
+		font-size: 20px;
+	}
 }
