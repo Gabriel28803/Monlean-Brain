@@ -1,4 +1,7 @@
 /*Aqui va el container de toooda la página y además el icono*/
+*{
+	text-decoration: none;
+}
 .container {
 	width: 100%;
 	height: 100vh;
@@ -10,13 +13,25 @@
 	position: absolute;
 	top: 3px;
 }
-/*Desarrollo del menú, funcionamiento en codigo.js*/
-.abrir__menu {
-	height: 5%;
-	width: 10%;
+/*Desarrollo del menú, funcionamiento en menu.js*/
+.contenedor__abrir_menu{
+	border: 2px solid #fff;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: fixed;
-	top: 10px;
+	top: 5px;
 	right: 10px;
+	border-radius: 10px;
+}
+.barra__menu{
+	margin: 1px;
+	width: 35px;
+	height: 10px;
+	background: #000;
+	border: 2px solid #fff;
+	border-radius: 10px;
 }
 .cerrar__menu{
 	height: 10%;
@@ -24,27 +39,32 @@
 	position: absolute;
 	top: 10px;
 	right: 10px;
+	padding: 5px;
+	border: 2px solid #fff;
+	border-radius: 15px;
 }
 .menu{
-	background: #5D36ABdd;
-	backdrop-filter: blur(20px);
+	background: #8844eeef;
 	position: fixed;
 	top: 0;
 	transform: translateY(-500px);
 	transition: transform .5s;
 	width: 100%;
+	z-index: 100;
 }
 .titulo__menu{
 	text-align: center;
-	font-size: 30px;
+	font-size: 45px;
 	color: #fff;
 	margin: 10px;
+	font-family: Newsreader;
 }
 .opcion__menu{
 	display: block;
 	color: #fff;
 	margin: 15px;
 	font-size: 20px;
+	font-family: Newsreader;
 }
 .opcion__menu i{
 	padding: 7px;
@@ -182,14 +202,15 @@
 	overflow: hidden;
 	width: 350px;
 	height: 240px;
-	background: #a22;
+	background: #444;
 	display: inline-block;
 	box-shadow: 3px 3px 7px #000;
 	border-radius: 3px;
+	transition: height .5s;
 }
 .pagina1__cuadros{
 	width: 350px;
-	height: 100%;
+	height: 240px;
 	text-align: center;
 	background: #444;
 	display: flex;
@@ -206,11 +227,13 @@
 	color: #fff;
 	border: none;
 	border-radius: 5px;
-	font-size: 17.5px;
+	font-size: 14.5px;
 	margin: 8px;
+	font-family: 'Libre Baskerville', cursive;
+	font-weight: 400;
 }
 .pagina1__cuadros .boton:hover{
-	background: #96e;
+	background: #86e;
 }
 .pagina1__cuadros h4{
 	background: #84e;
@@ -218,11 +241,16 @@
 	width: 100%;
 	margin: 0;
 	padding: 10px;
-	font-size: 24px;
+	font-size: 20px;
+	font-family: 'Libre Baskerville', cursive;
+	font-weight: 400;
 }
 .pagina1__cuadros p{
 	color: #fff;
-	font-size: 18.5px;
+	font-size: 16.5px;
+	font-family: 'Libre Baskerville', cursive;
+	font-weight: 400;
+	padding: 7px;
 }
 .espacioFlecha{
 	display: inline-block;
@@ -240,7 +268,38 @@
 	padding-left: 10px;
 }
 .flechas:hover{
-	color: #b7f
+	color: #86e;
+}
+.pagina1__cuadro1--informacion{
+	display: none;
+}
+.pagina1__cuadro2--informacion{
+	display: none;
+	padding: 0;
+}
+.pagina1__cuadro2--informacion li{
+	list-style: none;
+	color: #fff;
+	margin-top: 5px;
+	font-size: 20px;
+}
+.pagina1__cuadro2--informacion img{
+	padding-right: 5px;
+}
+.pagina1__cuadro2--informacion li:nth-child(1) img{
+	width: 30px;
+	height: 20px;
+}
+.pagina1__cuadro2--informacion li:nth-child(2) img{
+	width: 30px;
+	height: 25px;
+}
+.pagina1__cuadro2--informacion li:nth-child(3) img{
+	width: 25px;
+	height: 20px;
+}
+.pagina1__cuadro2--informacion li:hover{
+	color: #ff6;
 }
 /*Las siguientes propiedades son para adaptar a dispositivos mas grandes*/
 @media screen and (min-width: 600px) {
@@ -294,8 +353,6 @@
 		top: 15px;
 		right: 15px;
 		padding: 5px;
-		border: 2px solid #fff;
-		border-radius: 15px;
 	}
 	.cerrar__menu{
 		height: 50px;
@@ -304,8 +361,6 @@
 		top: 15px;
 		right: 15px;
 		padding: 5px;
-		border: 2px solid #fff;
-		border-radius: 15px;
 	}
 	.menu{
 		position: fixed;

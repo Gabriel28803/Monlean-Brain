@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="estilo.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 	<title>Monlean Brain</title>
@@ -14,18 +15,22 @@
 	<main class="container">
 			
 		<img class="img" src="imagenes/doritos.png" alt="">
-		<img src="imagenes/barras.png" class="abrir__menu" alt="Menú">
+		<div class="contenedor__abrir_menu">
+			<div class="barra__menu"></div>
+			<div class="barra__menu"></div>
+			<div class="barra__menu"></div>
+		</div>
 		<div class="menu">
 			<img src="imagenes/cerrarMenu.png" class="cerrar__menu" alt="Cerrar Menu">
 			<h3 class="titulo__menu">Monlean Brain</h3>
-			<a class="opcion__menu"><i class="fab fa-facebook-f"></i>Nuestra Página de Facebook</a>
-			<a class="opcion__menu"><i class="fab fa-instagram"></i>Nuestro Instagram</a>
-			<a class="opcion__menu"><i class="fab fa-youtube"></i>Canal de Youtube</a>
-			<a class="opcion__menu"><i class="fab fa-telegram"></i>Canal de Telegram</a>
-			<a class="opcion__menu"><i class="fab fa-whatsapp"></i>Grupo de Whatsapp</a>
+			<a class="opcion__menu" href="https://www.facebook.com/Monlean-Brain-106548814966964" target="_BLANK"><i class="fab fa-facebook-f"></i>Nuestra Página de Facebook</a>
+			<a class="opcion__menu" href="https://www.instagram.com/monlean_brain/" target="_BLANK"><i class="fab fa-instagram"></i>Nuestro Instagram</a>
+			<a class="opcion__menu" href=""><i class="fab fa-youtube"></i>Canal de Youtube</a>
+			<a class="opcion__menu" href=""><i class="fab fa-telegram"></i>Canal de Telegram</a>
+			<a class="opcion__menu" href=""><i class="fab fa-whatsapp"></i>Grupo de Whatsapp</a>
 			<a class="opcion__menu"><i class="fas fa-mail-bulk"></i>Contactanos por correo: <b>monleanbrain@gmail.com</b></a>
 		</div>
-		
+
 		<section class="pagina pagina1">
 			<div class="pagina1__container--encabezado">
 			<h4 class="pagina1__titulo">¿Que es Monlean Brain?</h4>
@@ -35,27 +40,35 @@
 				<div class="pagina1__cuadros pagina1__cuadro1">
 					<h4>¿Quieres saber más acerca de Monlean Brain?</h4>
 					<p>Este es un texto cualquiera, no uso Lorem porque se ve feo, luego lo acomodo.</p>
+
+					<p class="pagina1__cuadro1--informacion">Somos un pequeño grupo de jovenes que busca crear una comunidad abierta, capaz de compartir conocimiento y volvernos capaces de aprender en una sociedad online amigable. ¿Por qué? Lo averiguaremos...</p>
 					<div class="pagina1__cuadros-contenedor--boton">
 						<div class="espacioFlecha"></div>
-						<button class="boton">Más información</button>
+						<button class="boton boton1">Más información</button>
 						<i class="fas fa-arrow-right flechas flecha-derecha1"></i>
 					</div>
 				</div>
 				<div class="pagina1__cuadros pagina1__cuadro2">
 					<h4>Aqui nuestras redes:</h4>
-					<p>Contamos con página de Facebook, cuenta en Instgram y canal de Youtube.</p>
+					<p>Contamos con página de Facebook, cuenta en Instagram y canal de Youtube.</p>
+					<ul class="pagina1__cuadro2--informacion">
+						<li><img src="imagenes/youtube.png" alt="Logo de Youtube">En nuestro Youtube encontraras contenido variado explicando temas de programacion, diseño y ciencia.</li>
+						<li><img src="imagenes/facebook.png" alt="Logo de Facebook">En facebook veras una parte mas informal de Monlean Brain, con un detras de cortinas.</li>
+						<li><img src="imagenes/instagram.png" alt="Logo de Instagram">En Instagram tendrás muchos de nuestros proyectos terminados y un lado mas vistoso de Monlean.</li>
+					</ul>
 					<div class="pagina1__cuadros-contenedor--boton">
 						<i class="fas fa-arrow-left flechas flecha-izquierda2"></i>
-						<button class="boton">Más información</button>
+						<button class="boton boton2">Más información</button>
 						<i class="fas fa-arrow-right flechas flecha-derecha2"></i>
 					</div>
 				</div>
 				<div class="pagina1__cuadros pagina1__cuadro3">
 					<h4>Contáctanos mediante...</h4>
-					<p>Puedes <b>hablar directamente con nosotros</b> a traves de nuestro canal de telegram o grupo de Whatsapp.</p>
+					<p>Puedes hablar directamente con nosotros a traves de nuestro canal de telegram o grupo de Whatsapp.</p>
+					<div class="pagina1__cuadro3--informacion"></div>
 					<div class="pagina1__cuadros-contenedor--boton">
 						<i class="fas fa-arrow-left  flechas flecha-izquierda3"></i>
-						<button class="boton">Más información</button>
+						<button class="boton boton3">Más información</button>
 						<div class="espacioFlecha"></div>
 					</div>
 				</div>
@@ -95,8 +108,8 @@
 			<div class="redes">
 				<h4 class="redes__titulo">Nuestras redes:</h4>
 				<a href="#"><img class="redes__img youtube" src="imagenes/youtube.png" alt="Youtube"></a>
-				<a href="#"><img class="redes__img facebook" src="imagenes/facebook.png" alt="Facebook"></a>
-				<a href="#"><img class="redes__img instagram" src="imagenes/instagram.png" alt="Instagram"></a>
+				<a href="https://www.facebook.com/Monlean-Brain-106548814966964" target="_BLANK"><img class="redes__img facebook" src="imagenes/facebook.png" alt="Facebook"></a>
+				<a href="https://www.instagram.com/monlean_brain/" target="_BLANK"><img class="redes__img instagram" src="imagenes/instagram.png" alt="Instagram"></a>
 			</div>
 		</section>
 	</main>
